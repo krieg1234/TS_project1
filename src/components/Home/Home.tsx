@@ -46,10 +46,10 @@ export default class Home extends Component<IHomeProps, IHomeState> {
           <div className="SectionNavigation">
             {SECTIONS.map(
               ({ title, href, Icon }): ReactNode => (
-                <a className="SectionNavigation-Item Section" href={href}>
+                <Link className="SectionNavigation-Item Section" to={href}>
                   <Icon className="Section-Icon" />
                   <span className="Section-Title">{title}</span>
-                </a>
+                </Link>
               )
             )}
           </div>
